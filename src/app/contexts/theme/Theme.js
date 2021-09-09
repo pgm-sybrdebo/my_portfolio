@@ -5,11 +5,11 @@ const theme = {
   colors: {
     black: "#000",
     white: "#fff",
-    blackBg: "#070B12",
-    primaryAccentColor: "#00B0FO",
-    secondaryAccentColor: "F4BE18",
+    blackBg: "#050812",
+    primaryAccentColor: "#00B0F0",
+    secondaryAccentColor: "#F4BE18",
   },
-  fonts: ["Montserrat", "Open Sans"],
+  // fonts: ["Montserrat", "Open Sans"],
   fontSizes: {
     small: "1rem",
     medium: "1.5rem",

@@ -9,9 +9,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #070B12;
+    background-color: ${props => props.theme.colors.blackBg};
     color: #fff;
-    font-family: Open-Sans, Helvetica, Sans-Serif;
+    font-family: 'Montserrat';
+  }
+
+  a {
+    text-decoration: none;
   }
 `;
  

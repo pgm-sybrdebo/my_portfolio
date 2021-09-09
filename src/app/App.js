@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
+import GlobalFonts from './fonts/font';
 import GlobalStyle from './theme/globalStyles';
 import Theme from './contexts/theme/Theme';
 import * as Routes from './routes';
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <Theme>
+      <GlobalFonts />
       <GlobalStyle />
       <Router basename={'/SybrenDeBoever'}>
         <Switch>
