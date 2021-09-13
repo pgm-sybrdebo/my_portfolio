@@ -7,7 +7,11 @@ const HeaderStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5rem;
+  margin: 1.5rem 1.5rem 3rem 1.5rem;
+
+  @media (min-width: ${props => props.theme.width.medium}) {
+    margin: 1.5rem 3rem 3rem 3rem;
+  }
 `;
 
 const Logo = styled.span`
@@ -59,9 +63,6 @@ const NavButton = styled.button`
   @media (min-width: ${props => props.theme.width.medium}) {
     display: none;
   }
-`;
-
-const Navigation = styled.nav`
 `;
 
 const NavigationList = styled.ul`
@@ -125,9 +126,17 @@ const NavigationList = styled.ul`
 
       &.is-active {
         color: ${props => props.theme.colors.primaryAccentColor};
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -0.5rem;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background-color: ${props => props.theme.colors.primaryAccentColor};
+        }
       }
-
-
     }
   }
 
@@ -160,7 +169,7 @@ const Header = () => {
         <span />
       </NavButton>
 
-      <Navigation  open={open}>
+      <nav  open={open}>
         <NavigationList open={open}>
           <li>
             <NavLink to={Routes.PROJECTS} activeClassName='is-active'>My Projects</NavLink>
@@ -172,7 +181,7 @@ const Header = () => {
             <NavLink to={Routes.CONTACT} activeClassName='is-active'>Contact me</NavLink>
           </li>
         </NavigationList>  
-      </Navigation>       
+      </nav>       
     </HeaderStyle>
   )
 }

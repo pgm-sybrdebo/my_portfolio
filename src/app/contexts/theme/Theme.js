@@ -12,8 +12,10 @@ const theme = {
   // fonts: ["Montserrat", "Open Sans"],
   fontSizes: {
     small: "1rem",
+    normal: "1.2rem",
     medium: "1.5rem",
-    large: "2rem",
+    emedium: "1.8rem",
+    large: "2.5rem",
     elarge: "3.5rem",
     slarge: "5rem",
     btn: "1.2rem",
