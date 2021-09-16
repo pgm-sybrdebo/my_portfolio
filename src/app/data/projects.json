@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "name": "Hikeventure",
+    "image": "/media/images/projects/hikeventureMockup.png",
+    "intro": "As a school assignment, a hiking app \"Hikeventure\" was designed. In addition, a landing page was also created for the promotion of the app (desktop only). Hikeventure is a walking app with a wide range of walking routes all over the world. They provide walking routes for both novice walkers to passionate ones.",
+    "deliverables": [
+      {
+        "name": "Low-fidelity wireframes app",
+        "link": "https://xd.adobe.com/view/2bc97559-3480-4c40-aab8-b3a5764b93da-7e9a/"
+      },
+      {
+        "name": "Design system app",
+        "link": "https://shared-assets.adobe.com/link/24f40a69-3ccd-4823-7a14-186c4aae4f65"
+      },
+      {
+        "name": "Prototype app",
+        "link": "https://xd.adobe.com/view/45362993-ec5e-43ed-a9cb-787d63e5057f-1065/"
+      },
+      {
+        "name": "github code landing page",
+        "link": "https://github.com/pgm-sybrdebo/Landingpage_Hiking_App"
+      }
+    ],
+    "part1Image": "/media/images/projects/hikeventurePart1.png",
+    "part1": "The app was only designed in Adobe Xd. First and foremost, a brainstorming session was held concerning the target group and which functionalities will be offered. The app was then presented visually using low-fidelity wireframes. After the feedback, these low-fidelity wireframes were converted to high-fidelity wireframes. Finally, a prototype with interactions was created.",
+    "part2Image": "/media/images/projects/hikeventurePart2.png",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": "/media/svg/technologies/html.svg"
+      },
+      {
+        "name": "CSS",
+        "image": "/media/svg/technologies/css.svg"
+      },
+      {
+        "name": "Js",
+        "image": "/media/svg/technologies/js.svg"
+      },
+      {
+        "name": "Node",
+        "image": "/media/svg/technologies/node.svg"
+      },
+      {
+        "name": "Nunjucks",
+        "image": "/media/svg/technologies/nunjucks.svg"
+      },
+      {
+        "name": "Sass",
+        "image": "/media/svg/technologies/sass.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/hikeventureBottom.png"
+  },
+  {
+    "id": 2,
+    "name": "MovieWorld",
+    "image": "/media/images/projects/movieworldMockup.png"
+  },
+  {
+    "id": 3,
+    "name": "Timeless Taste",
+    "image": "/media/images/projects/timelesstasteMockup.png"
+  },
+  {
+    "id": 3,
+    "name": "Roadbase",
+    "image": "/media/images/projects/roadbaseMockup.png"
+  }
+]

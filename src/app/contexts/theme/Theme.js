@@ -11,6 +11,7 @@ const theme = {
   },
   // fonts: ["Montserrat", "Open Sans"],
   fontSizes: {
+    esmall: "0.8rem",
     small: "1rem",
     normal: "1.2rem",
     medium: "1.5rem",
@@ -36,7 +37,8 @@ const theme = {
     elarge: "1600px",
   },
   transition: {
-    normal: "all 0.2s ease"
+    normal: "all 0.2s ease-in-out",
+    medium: "all 0.5s ease-in-out"
   }
 };
 

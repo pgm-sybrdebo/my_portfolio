@@ -5,7 +5,7 @@ import GlobalFonts from './fonts/font';
 import GlobalStyle from './theme/globalStyles';
 import Theme from './contexts/theme/Theme';
 import * as Routes from './routes';
-import { HomePage, ContactPage } from './pages';
+import { HomePage, ContactPage, ProjectsPage, ProjectPage } from './pages';
 
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
         <Switch>
         <Route exact path={Routes.LANDING} component={ HomePage }/>
         <Route from={Routes.HOME} to={Routes.LANDING}/>
+        <Route exact path={Routes.PROJECTS} component={ProjectsPage}/>
+        <Route exact path={Routes.PROJECTS_DETAILS} component={ProjectPage}/>
         <Route exact path={Routes.CONTACT} component={ ContactPage }/>
         </Switch>
       </Router>
