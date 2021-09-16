@@ -25,6 +25,7 @@ const shine = keyframes`
 const Welcome = styled.p`
   font-weight: 700;
   margin-top: 8rem;
+  padding: 0 1rem;
   text-align: center;
   font-size: ${props => props.theme.fontSizes.medium};
   text-transform: uppercase;
@@ -47,6 +48,7 @@ const Welcome = styled.p`
 const Video = styled.video`
   width: 100%;
   filter: opacity(100%);
+  top: 10%;
   bottom: 'auto';
   z-index: -1;
   transition: all 2s ease-in-out;
@@ -103,7 +105,6 @@ const Page = styled.div`
   // display: none;
   display: block;
   visibility: visible;
-  position: absolute;
   top: 0;
   max-width: ${props => props.theme.width.elarge};
   margin: 0 auto;
@@ -170,6 +171,7 @@ const HomePage = () => {
           filter: 'opacity(25%)',
           position: 'absolute',
           left: '-50%',
+          top: 'auto',
           bottom: '30%',
         }
       }, 'start'
