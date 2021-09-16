@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Hikeventure",
+    "highlighted": false,
     "image": "/media/images/projects/hikeventureMockup.png",
     "intro": "As a school assignment, a hiking app \"Hikeventure\" was designed. In addition, a landing page was also created for the promotion of the app (desktop only). Hikeventure is a walking app with a wide range of walking routes all over the world. They provide walking routes for both novice walkers to passionate ones.",
     "deliverables": [
@@ -56,16 +57,194 @@
   {
     "id": 2,
     "name": "MovieWorld",
-    "image": "/media/images/projects/movieworldMockup.png"
+    "highlighted": false,
+    "image": "/media/images/projects/movieworldMockup.png",
+    "intro": "As a school assignment, a movie application was created where users can review movies and series. In addition, they can also see the details of the movies and series, including the user rating. MovieWorld is based on the cinema feeling you get when watching a movie. The website is hosted on firebase.",
+    "deliverables": [
+      {
+        "name": "Wireframes",
+        "link": "https://xd.adobe.com/view/9062e08d-e1a1-4204-862b-44bf0999d260-c531/"
+      },
+      {
+        "name": "Full website",
+        "link": "https://movieworld-4e1a0.web.app/"
+      },
+      {
+        "name": "github code",
+        "link": "https://github.com/pgmgent-pgm-4/movie-application-pgm-sybrdebo"
+      }
+    ],
+    "part1Image": "/media/images/projects/movieworldPart1.png",
+    "part1": "First of all, a brainstorming session was held about what the movie application should look like and what functionalities it should contain. Once this information was collected, low-fidelity and high-fidelity wireframes were created for the main web pages. After the feedback on this, MovieWorld was created with react.",
+    "part2Image": "/media/images/projects/movieworldPart2.png",
+    "technologies": [
+      {
+        "name": "React",
+        "image": "/media/svg/technologies/react.svg"
+      },
+      {
+        "name": "CSS",
+        "image": "/media/svg/technologies/css.svg"
+      },
+      {
+        "name": "Js",
+        "image": "/media/svg/technologies/js.svg"
+      },
+      {
+        "name": "Node",
+        "image": "/media/svg/technologies/node.svg"
+      },
+      {
+        "name": "Firebase",
+        "image": "/media/svg/technologies/firebase.svg"
+      },
+      {
+        "name": "Firestore",
+        "image": "/media/svg/technologies/firestore.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/movieworldBottom.png"
   },
   {
     "id": 3,
     "name": "Timeless Taste",
-    "image": "/media/images/projects/timelesstasteMockup.png"
+    "highlighted": true,
+    "image": "/media/images/projects/timelesstasteMockup.png",
+    "intro": "As a school assignment, the webshop \"Timeless Taste\" was created. The target group and products were free to choose from. We decided to offer watches and accompanying accessories. The target group are entrepreneurs, lawyers, business people, ... . A more luxurious feel was therefore chosen. This project was in collaboration with Jamie-Lee Hart.",
+    "deliverables": [
+      {
+        "name": "Ideaboard | Moodboard | Style Tyle",
+        "link": "https://xd.adobe.com/view/effe93b0-4fc1-4664-816e-d0b3a8a8b190-"
+      },
+      {
+        "name": "Wireframes",
+        "link": "https://xd.adobe.com/view/eb7e0d5a-6341-4864-8788-8f7d68c09084-"
+      },
+      {
+        "name": "Visual design",
+        "link": "https://xd.adobe.com/view/8866f9a2-6c24-42e3-bf59-327d77ff6ba5-dd35/"
+      },
+      {
+        "name": "Prototype",
+        "link": "https://xd.adobe.com/view/cf2f22b0-1e22-4ce4-8e83-6365e0414da0-9a7c/"
+      },
+      {
+        "name":"github code",
+        "link":"https://github.com/pgmgent-pgm-4/webshop-runtime-terror"
+      }
+    ],
+    "part1Image": "/media/images/projects/timelessPart1.png",
+    "part1": "The first step in developing the webshop consisted of brainstorming about product ideas. We then used an idea board to map out the impulsive ideas. Subsequently, a mood board was chosen to make a schematic selection of the various ideas. The second step involved designing a Styletile in which the visual elements of the webshop were determined. Thirdly, the structure of the web store was built up by using a sitemap. The ideas were then converted to wireframes to get a first impression of the webshop. With subsequent detailed elaboration by the visual design. Finally, the result was programmed.",
+    "part2Image": "/media/images/projects/timelessPart2.png",
+    "technologies": [
+      {
+        "name": "Nunjucks",
+        "image": "/media/svg/technologies/nunjucks.svg"
+      },
+      {
+        "name": "SASS",
+        "image": "/media/svg/technologies/sass.svg"
+      },
+      {
+        "name": "Js",
+        "image": "/media/svg/technologies/js.svg"
+      },
+      {
+        "name": "Node",
+        "image": "/media/svg/technologies/node.svg"
+      },
+      {
+        "name": "Passport",
+        "image": "/media/svg/technologies/passportjs.svg"
+      },
+      {
+        "name": "Sequelize",
+        "image": "/media/svg/technologies/sequelize.svg"
+      },
+      {
+        "name": "Sqlite",
+        "image": "/media/svg/technologies/sqlite.svg"
+      },
+      {
+        "name": "Swagger",
+        "image": "/media/svg/technologies/swagger.svg"
+      },
+      {
+        "name": "Express",
+        "image": "/media/svg/technologies/express.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/timelessBottom.png"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Roadbase",
-    "image": "/media/images/projects/roadbaseMockup.png"
+    "highlighted": true,
+    "image": "/media/images/projects/roadbaseMockup.png",
+    "intro": "RoadBase is a project created in a collaboration between Open Summer of Code and Agentschap Binnenlands Bestuur, Agentschap Wegen en Verkeer and Departement Mobiliteit en Openbare Werken Vlaanderen. The aim of this project is to create a tool to gather and integrate up to date information from different sources regarding road signs and road marks so that citizens, road managers and policy makers can effectively contribute to make their communities safer. Through linked open data, this tool is expected to provide convenience to road users and encourage them to actively engage in providing information to enhance road safety.",
+    "deliverables": [
+      {
+        "name": "Mobile application prototype",
+        "link": "https://www.figma.com/proto/gwVr3SJgdRXQMuMAMwI4Wu/RoadBase_Prototype?node-id=0%3A1&scaling=min-zoom&starting-point-node-id=5%3A2"
+      },
+      {
+        "name": "Project File",
+        "link": "https://osoc21.github.io/RoadBase/RoadBase.pdf"
+      },
+      {
+        "name": "Roadbase Prototype",
+        "link": "https://www.figma.com/proto/i4pqBpbcytwpBxVxgTaX3k/Roadbase-Website?node-id=161%3A1301&scaling=min-zoom&starting-point-node-id=161%3A1301"
+      },
+      {
+        "name": "Roadbase Proof-of-concept",
+        "link":"https://osoc-safe-open-roads.s.redpencil.io/"
+      },
+      {
+        "name": "Github page",
+        "link": "https://osoc21.github.io/RoadBase/"
+      }
+    ],
+    "part1Image": "/media/images/projects/roadbasePart1.png",
+    "part1": "RoadBase has been created by a team of nine multidisciplinary students with different backgrounds and a lot  of  dedication. Due to the global pandemic, virtual meetings are the main channel of communication and diverse digital tools (e.g. Figma, Trello, Notion, Ember) are deployed daily. Together with the coaches and student coaches, the team strives to provide the partners with the most concrete and valuable solution so that the organisations, citizens and all involved parties can truly benefit. To increase efficiency and flexibility, the team is divided into 2 subteams: the strategic team and the technical team.",
+    "part2Image": "/media/images/projects/roadbasePart2.png",
+    "technologies": [
+      {
+        "name": "Ember",
+        "image": "/media/svg/technologies/ember.svg"
+      },
+      {
+        "name": "SASS",
+        "image": "/media/svg/technologies/sass.svg"
+      },
+      {
+        "name": "Js",
+        "image": "/media/svg/technologies/js.svg"
+      },
+      {
+        "name": "Leaflet",
+        "image": "/media/svg/technologies/leaflet.svg"
+      },
+      {
+        "name": "Node",
+        "image": "/media/svg/technologies/node.svg"
+      },
+      {
+        "name": "Handlebars",
+        "image": "/media/svg/technologies/handlebars.svg"
+      },
+      {
+        "name": "Python",
+        "image": "/media/svg/technologies/python.svg"
+      },
+      {
+        "name": "Virtuoso",
+        "image": "/media/svg/technologies/virtuoso.svg"
+      },
+      {
+        "name": "Docker",
+        "image": "/media/svg/technologies/docker.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/roadbaseBottom.png"
   }
 ]

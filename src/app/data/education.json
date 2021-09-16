@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "years": "2020- 2021",
+    "diploma": "Associate degree in computer programming",
+    "subject": "",
+    "specification": "",
+    "honours": "",
+    "place": "Artevelde University College"
+  },
+  {
+    "id": 2,
+    "years": "2018- 2020",
+    "diploma": "Master Business administration",
+    "subject": " - Main subject",
+    "specification": "Management and IT",
+    "honours": "obtained with honours",
+    "place": "Ghent University"
+  },
+  {
+    "id": 3,
+    "years": "2014- 2018",
+    "diploma": "Bachelor Finance, insurance and real estate",
+    "subject": "",
+    "specification": "",
+    "honours": "",
+    "place": "Artevelde University College"
+  },
+  {
+    "id": 4,
+    "years": "2008- 2014",
+    "diploma": "Trade economics",
+    "subject": "",
+    "specification": "",
+    "honours": "",
+    "place": "Heilig-Hartcollege Waregem"
+  }
+]

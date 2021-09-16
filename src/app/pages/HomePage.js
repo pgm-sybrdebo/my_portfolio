@@ -1,9 +1,17 @@
 import { useRef, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import {TimelineLite, TweenMax, Power3} from 'gsap';
+import { Header, Footer } from '../components/layout';
+import { PrimButton } from '../components/buttons';
+import { Link } from "react-router-dom";
+import * as Routes from '../routes';
+import projects from '../data/projects.json';
+import { ProjectCard } from '../components/projects';
+
+
 
 const connectionEarth = '/media/loading/connection-earth.mp4';
-const profileImage = '/media/images/SybrenTest.png';
+const profileImage = '/media/images/sybren.png';
 
 const shine = keyframes`
 0% {
@@ -39,44 +47,87 @@ const Welcome = styled.p`
 const Video = styled.video`
   width: 100%;
   filter: opacity(100%);
+  bottom: 'auto';
+  z-index: -1;
   transition: all 2s ease-in-out;
 `;
 
 const HeroContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: ${props => props.theme.fontSizes.medium};
+  margin-bottom: 6rem;
+  @media (min-width: ${props => props.theme.width.medium}) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 const HeroContainer__left = styled.div`
-  width: 58%;
-  margin-left: 1.5rem;
+  width: 100%;
 
+  @media (min-width: ${props => props.theme.width.medium}) {
+    width: 58%;
+    margin-left: 1.5rem;
+  }
   p {
     margin-bottom: 1.5rem;
   }
 
 `;
 
-const HeroContainer__left__welcome = styled.p`
-font-size: ${props => props.theme.fontSizes.large};
-font-weight: ${props => props.theme.fontWeights.bold};
+const Title = styled.h1`
+  margin-bottom: 1.5rem;
+`;
 
-
-span {
+const Accent = styled.span`
   color: ${props => props.theme.colors.primaryAccentColor};
-}
+  font-size: ${props => props.theme.fontSizes.emedium};
+
+  @media (min-width: ${props => props.theme.width.medium}) {
+    font-size: ${props => props.theme.fontSizes.large};
+  }
 `;
 
 const ProfileImage = styled.img`
-  width: 38%;
+  width: 100%;
+  display: block;
+  max-width: 20rem;
+  margin: 0 auto 3rem auto;
+
+  @media (min-width: ${props => props.theme.width.medium}) {
+    width: 38%;
+    order: 2;
+  }
+`;
+
+const Page = styled.div`
+  // display: none;
+  display: block;
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  max-width: ${props => props.theme.width.elarge};
+  margin: 0 auto;
+`;
+
+const SuperContainer = styled.div`
+  padding: 0 1.5rem;
+
+  @media (min-width: ${props => props.theme.width.medium}) {
+    padding: 0 3rem;
+  }
+`;
+
+const ProjectsList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const HomePage = () => {
   let tl = new TimelineLite();
   let welcomeText = useRef(null);
   let loadingVideo = useRef(null);
+  let pag = useRef(null);
 
   useEffect(() => {
     tl.from(
@@ -85,6 +136,7 @@ const HomePage = () => {
       {
         opacity: 0,
         y: -20,
+        bottom: 'auto',
         ease: Power3.easeOut,
       }, 'start'
        )
@@ -98,26 +150,6 @@ const HomePage = () => {
         ease: Power3.easeOut,
       }
     )
-
-    // TweenMax.from(
-    //   welcomeText,
-    //   0.8,
-    //   {
-    //     opacity: 0,
-    //     y: -20,
-    //     ease: Power3.easeOut,
-    //   }
-    // )
-
-    // TweenMax.to(
-    //   welcomeText,
-    //   0,
-    //   {
-    //     opacity: 0,
-    //     delay: 12,
-    //     ease: Power3.easeOut,
-    //   }
-    // )
 
     tl.from(
       loadingVideo,
@@ -138,23 +170,35 @@ const HomePage = () => {
           filter: 'opacity(25%)',
           position: 'absolute',
           left: '-50%',
+          bottom: '30%',
         }
       }, 'start'
     )
-
-    // TweenMax.to(
-    //   loadingVideo,
-    //   5,
+    
+    // tl.to(
+    //   pag,
+    //   2,
     //   {
-    //     ease: Power3.easeOut,
-    //     delay: 12,
+    //     ease: Power3.easeInOut,
+    //     delay: 14,
     //     css: {
-    //       filter: 'opacity(10%)',
-    //       position: 'absolute',
-    //       left: '-50%'
+    //       display: 'block',
+    //       top: 0,
     //     }
-    //   }
+    //   }, 'start'
     // )
+    tl.from(
+      pag,
+      0.5,
+      {
+        ease: Power3.easeInOut,
+        delay: 12,
+        y: 2000,
+        css: {
+          visibility: 'hidden'
+        }
+      }, 'start'
+    )
 
     
   }, [])
@@ -162,24 +206,42 @@ const HomePage = () => {
   
   
   return (
-    <div>
+    <>
       <div>
         <Welcome ref={el => {welcomeText = el}}>Welcome to my portfolio!</Welcome>
-        <Video ref={el => {loadingVideo = el}} autoPlay loop muted>
-            <source src={connectionEarth} type="video/mp4"></source>
-        </Video>
-        <HeroContainer>
-          <HeroContainer__left>
-            <HeroContainer__left__welcome>Hi there, I am <span>Sybren De Boever</span></HeroContainer__left__welcome>
-            <p>I am passionate about analyzing and solving problems. This is due to my curious and perfectionist nature.</p>
-            <p>After obtaining my master's degree in commercial sciences with a specialization in IT business, I am currently pursuing a degree in programming.</p>
-          </HeroContainer__left>
-          
-          <ProfileImage src={profileImage} alt="Sybren De Boever"></ProfileImage>
-        </HeroContainer>
-        
-      </div>  
-    </div>
+          <Video ref={el => {loadingVideo = el}} autoPlay loop muted>
+              <source src={connectionEarth} type="video/mp4"></source>
+          </Video>
+      </div>
+      <Page ref={el => {pag = el}}>
+        <Header />
+        <SuperContainer>
+          <HeroContainer>
+            <ProfileImage src={profileImage} alt="Sybren De Boever"></ProfileImage>
+            <HeroContainer__left>
+              <Title>Hi there, I am <Accent>Sybren De Boever</Accent></Title>
+              <p>I am a passionate programmer who loves analyzing and solving problems. This is due to my curious and perfectionist nature.</p>
+              <p>After obtaining my master's degree in commercial sciences with a specialization in IT business, I am currently pursuing a degree in programming.</p>
+              <Link to={Routes.CONTACT}>
+                <PrimButton text={"Get in touch"} />
+              </Link>
+                
+            </HeroContainer__left>
+          </HeroContainer>
+
+          <h2>Highlighted projects</h2>
+          <ProjectsList>
+            {projects.map(project => {
+              return (
+                project.highlighted ? 
+                <ProjectCard key={project.id} project={project}></ProjectCard> : ''
+              )
+            })}
+          </ProjectsList>
+        </SuperContainer>
+        <Footer />
+      </Page>  
+    </>
   )
 }
 

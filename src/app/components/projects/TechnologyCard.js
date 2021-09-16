@@ -25,6 +25,10 @@ const Technology = styled.li`
       transform: rotateX(0deg);
     }
 
+    .whiteImg {
+      filter: invert(100%) sepia(2%) saturate(3%) hue-rotate(19deg) brightness(103%) contrast(100%);
+    }
+
     span {
       transform: rotate3d(1, 1, 0, -180deg);
       position: absolute;
@@ -40,6 +44,7 @@ const Technology = styled.li`
       font-size: ${props => props.theme.fontSizes.esmall};
       align-items: center;
       justify-content: center;
+      word-break: break-all;
     }
   }
 
@@ -52,7 +57,7 @@ const TechnologyCard = ({technology}) => {
   return (
     <Technology>
       <div>
-        <img src={technology.image} />
+        <img src={technology.image} className={technology.name === 'Handlebars' || technology.name === 'Express' ? 'whiteImg': ''}/>
         <span>{technology.name}</span>
       </div>
     </Technology>

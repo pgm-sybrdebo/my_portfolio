@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "name": "HTML",
+    "image": "/media/svg/technologies/html.svg"
+  },
+  {
+    "id": 2,
+    "name": "CSS",
+    "image": "/media/svg/technologies/css.svg"
+  },
+  {
+    "id": 3,
+    "name": "Js",
+    "image": "/media/svg/technologies/js.svg"
+  },
+  {
+    "id": 4,
+    "name": "Python",
+    "image": "/media/svg/technologies/python.svg"
+  },
+  {
+    "id": 5,
+    "name": "Node",
+    "image": "/media/svg/technologies/node.svg"
+  },
+  {
+    "id": 6,
+    "name": "Nunjucks",
+    "image": "/media/svg/technologies/nunjucks.svg"
+  },
+  {
+    "id": 7,
+    "name": "Sass",
+    "image": "/media/svg/technologies/sass.svg"
+  },
+  {
+    "id": 8,
+    "name": "React",
+    "image": "/media/svg/technologies/react.svg"
+  },
+  {
+    "id": 9,
+    "name": "Ember",
+    "image": "/media/svg/technologies/ember.svg"
+  },
+  {
+    "id": 10,
+    "name": "Leaflet",
+    "image": "/media/svg/technologies/leaflet.svg"
+  },
+  {
+    "id": 11,
+    "name": "Handlebars",
+    "image": "/media/svg/technologies/handlebars.svg"
+  },
+  {
+    "id": 12,
+    "name": "Express",
+    "image": "/media/svg/technologies/express.svg"
+  },
+  {
+    "id": 13,
+    "name": "Passport",
+    "image": "/media/svg/technologies/passportjs.svg"
+  },
+  {
+    "id": 14,
+    "name": "Firebase",
+    "image": "/media/svg/technologies/firebase.svg"
+  },
+  {
+    "id": 15,
+    "name": "Firestore",
+    "image": "/media/svg/technologies/firestore.svg"
+  },
+  {
+    "id": 16,
+    "name": "Sequelize",
+    "image": "/media/svg/technologies/sequelize.svg"
+  },
+  {
+    "id": 17,
+    "name": "Sqlite",
+    "image": "/media/svg/technologies/sqlite.svg"
+  },
+  {
+    "id": 18,
+    "name": "MySql",
+    "image": "/media/svg/technologies/mysql.svg"
+  },
+  {
+    "id": 19,
+    "name": "Swagger",
+    "image": "/media/svg/technologies/swagger.svg"
+  },
+  {
+    "id": 20,
+    "name": "Docker",
+    "image": "/media/svg/technologies/docker.svg"
+  },
+  {
+    "id": 21,
+    "name": "Git",
+    "image": "/media/svg/technologies/git.svg"
+  },
+  {
+    "id": 22,
+    "name": "Adobe Xd",
+    "image": "/media/svg/technologies/adobexd.svg"
+  },
+  {
+    "id": 23,
+    "name": "Photoshop",
+    "image": "/media/svg/technologies/adobephotoshop.svg"
+  },
+  {
+    "id": 24,
+    "name": "Figma",
+    "image": "/media/svg/technologies/figma.svg"
+  }
+
+ 
+
+]

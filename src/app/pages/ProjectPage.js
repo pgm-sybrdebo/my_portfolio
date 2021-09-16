@@ -16,7 +16,7 @@ const SplitsContainer = styled.div`
 `;
 
 const ImageContainerSplit = styled.div`
-  width: 100vw;
+  width: calc(100vw - 9px);
   position: relative;
   left: 50%;
   right: 50%;
@@ -34,7 +34,7 @@ const ImageContainerSplit = styled.div`
 `;
 
 const ImageContainerSplitRight = styled.div`
-  width: 100vw;
+  width: calc(100vw - 9px);
   position: relative;
   left: 50%;
   right: 50%;
@@ -54,7 +54,7 @@ const ImageContainerSplitRight = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 100vw;
+  width: calc(100vw - 9px);
   
   position: relative;
   left: 50%;
@@ -82,12 +82,13 @@ const HalfContainer = styled.div`
 
 const Title = styled.h1`
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
+  color: ${props => props.theme.colors.primaryAccentColor};
 `;
 
 const Intro = styled.p`
   width: 100%;
-  max-width: 26rem;
+  max-width: 32rem;
   margin: 0 auto;
   text-align: center;
 `;

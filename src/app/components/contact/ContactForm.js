@@ -98,7 +98,7 @@ const ContactForm = () => {
         Message *
         <textarea onChange={handleOnChange} name="message" value={form.message} placeholder="Your message ..." required/>
       </label>
-      <PrimButton type="submit" />
+      <PrimButton type="submit" text={"Send message"} />
     </Form>
   )
 }

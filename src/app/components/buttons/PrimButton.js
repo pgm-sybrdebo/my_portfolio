@@ -66,12 +66,12 @@ const ButtonContainer = styled.div`
 
 `;
 
-const PrimButton = () => {
+const PrimButton = ({text}) => {
   return (
     <ButtonContainer>
-      <span>Send message</span>
+      <span>{text}</span>
 
-      <button>Send message</button>
+      <button>{text}</button>
     </ButtonContainer>
   )
 }
