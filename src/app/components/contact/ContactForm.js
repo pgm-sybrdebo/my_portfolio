@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import axios from 'axios';
 import { useState } from 'react';
 import { PrimButton } from '../buttons';
 
@@ -69,6 +70,10 @@ const ContactForm = () => {
     message: '',
   });
 
+  const [loading, setLoading] = useState(false);
+  const [formStatus, setFormStatus] = useState(false);
+  const [error, setError] = useState(null);
+
   const handleOnChange = (e) => {
     setForm({
       ...form,
@@ -77,12 +82,41 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(form);
+    // e.preventDefault();
+    // if (loading) return;
+    // setLoading(true);
+    // const formData = new FormData();
+    // Object.entries(form).forEach(([key, value]) => {
+    //   formData.append(key, value);
+    // });
+    // console.log(formData);
+
+    // axios.post(
+    //   "https://getform.io/f/18a332f9-694e-401a-8fd7-c89b824d41db",
+    //   formData,
+    //   { headers: { Accept: "application/json" }}
+    // )
+    // .then( response => {
+    //   setFormStatus(true);
+    //   console.log(response);
+    //   setForm({
+    //     fullName: '',
+    //     email: '',
+    //     message: '',
+    //   });
+    // })
+    // .catch(error => {
+    //   console.log("Error fetching data:", error);
+    //   setError(error.message);
+    // })
+    // .finally(() => {
+    //   console.log("verstuurd")
+    //   setLoading(false);
+    // });
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form  enctype="multipart/form-data" action="https://getform.io/f/18a332f9-694e-401a-8fd7-c89b824d41db" method="POST" onSubmit={handleSubmit}>
       <label>
         Name *
 
