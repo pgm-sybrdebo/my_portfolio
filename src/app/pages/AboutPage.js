@@ -27,6 +27,7 @@ const Hero = styled.div`
 
 const ProfileImg = styled.img`
   width: 100%;
+  max-width: 20rem;
   margin-bottom: 1.5rem;
 
   @media (min-width: ${props => props.theme.width.medium}) {
