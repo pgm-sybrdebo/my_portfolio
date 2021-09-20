@@ -9,13 +9,15 @@ const ProjectsList = styled.ul`
   justify-content: space-between;
 `;
 
-
+const Title = styled.h1`
+  padding-bottom: 1.5rem;
+`;
 
 const ProjectsPage = () => {
   
   return (
     <BaseLayout>
-      <h1>My projects</h1>
+      <Title>My projects</Title>
       <p>In the past year, I have worked on several projects. Here is a brief overview of some of these projects.</p>
       <ProjectsList>
         {projects.map(project => {

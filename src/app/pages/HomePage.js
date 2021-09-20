@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-import {TimelineLite, TweenMax, Power3} from 'gsap';
+import { gsap } from 'gsap';
 import { Header, Footer } from '../components/layout';
 import { PrimButton } from '../components/buttons';
 import { Link } from "react-router-dom";
