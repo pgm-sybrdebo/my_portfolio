@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import useView from '../hooks/useView';
 import { BaseLayout } from '../layouts';
 import { ContactDetails, ContactForm } from '../components/contact';
 
@@ -17,7 +20,7 @@ const ContactDetailsContainer = styled.div`
   }
 `;
 
-const ContactFormContainer = styled.div`
+const ContactFormContainer = styled(motion.div)`
   margin-top: 5rem;
 
   @media (min-width: ${props => props.theme.width.medium}) {
@@ -37,6 +40,9 @@ const Accent = styled.span`
 `;
 
 const ContactPage = () => {
+
+  const { ref, inView }=  useInView();
+  const animation = useView(inView);
   
   return (
     <BaseLayout>
@@ -48,7 +54,7 @@ const ContactPage = () => {
           <ContactDetails />
         </ContactDetailsContainer>
 
-        <ContactFormContainer>
+        <ContactFormContainer ref={ref} animate={animation} >
           <h2>Send me a message</h2>
 
           <ContactForm />

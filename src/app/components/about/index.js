@@ -1,7 +1,11 @@
-import WorkItem from "./WorkItem";
-import EducationItem from "./EducationItem";
+import Hero from "./Hero";
+import Work from "./Work";
+import Education from "./Education";
+import Technology from "./Technology";
 
 export {
-  WorkItem,
-  EducationItem
+  Hero,
+  Work,
+  Education,
+  Technology
 }

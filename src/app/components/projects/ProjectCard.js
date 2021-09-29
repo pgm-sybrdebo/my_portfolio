@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import * as Routes from '../../routes';
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import useView from '../../hooks/useView';
 
-const Card = styled.div`
+const Card = styled(motion.div)`
   position: relative;
   width: 100%;
   cursor: pointer;
@@ -123,11 +126,14 @@ const Card = styled.div`
 `;
 
 const ProjectCard = ({project}) => {
+  const { ref, inView }=  useInView();
+  const animation = useView(inView);
+
   return (
-    <Card>
+    <Card ref={ref} animate={animation} >
       <Link to={Routes.PROJECTS_DETAILS.replace(':id', project.id)}>
         <div className="imageContainer">
-          <img src={project.image}></img>
+          <img src={project.image} alt={project.name}></img>
         </div>
 
         <div className="textContainer">

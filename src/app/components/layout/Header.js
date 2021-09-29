@@ -7,30 +7,24 @@ const HeaderStyle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5rem 1.5rem 3rem 1.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
 
   @media (min-width: ${props => props.theme.width.medium}) {
-    margin: 1.5rem 3rem 3rem 3rem;
+    margin: 0.5rem 3rem 1.5rem 3rem;
   }
 `;
 
-const Logo = styled.span`
-  color: ${props => props.theme.colors.white};
-  font-size: ${props => props.theme.fontSizes.large};
-  font-weight: ${props => props.theme.fontWeights.bold};
+const Logo = styled.svg`
   transition: ${props => props.theme.transition.normal};
-  display: inline-block;
+  
 
   &:hover {
-    color: ${props => props.theme.colors.primaryAccentColor};
+    text {
+      fill: ${props => props.theme.colors.primaryAccentColor};
+    }
     transform: scale(1.2);
   }
-
-  @media (min-width: ${props => props.theme.width.medium}) {
-    padding-bottom: 1rem;
-  }
 `;
-
 
 const NavButton = styled.button`
   outline: none;
@@ -68,20 +62,19 @@ const NavButton = styled.button`
 const NavigationList = styled.ul`
   list-style: none;
   position: absolute;
-  left: 0;
+  left: 1.5rem;
   top:  ${({ open }) => open ? '0' : '-100%'};
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
   overscroll-behavior: contain;
-  padding: 1.5rem;
   padding-top: 6rem;
   background-color: ${props => props.theme.colors.blackBg};
   z-index: 10;
   transition: ${props => props.theme.transition.normal};
 
   li {
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 
     a {
       position: relative;
@@ -160,7 +153,7 @@ const Header = () => {
   return (
     <HeaderStyle>
       <NavLink to={Routes.LANDING}>
-        <Logo>S.</Logo>
+        <Logo xmlns="http://www.w3.org/2000/svg" width="70" height="49"><g data-name="Group 1" fill="#fff" fontFamily="Montserrat-Bold, Montserrat" fontWeight="700"><text fontSize="40"><tspan x="0" y="39">S</tspan></text><text transform="matrix(-1 0 0 1 47 39)" fontSize="24"><tspan x="0" y="0">D</tspan></text><text transform="translate(39 16)" fontSize="24"><tspan x="0" y="23">B</tspan></text></g></Logo>
       </NavLink>
 
       <NavButton open={open} onClick={() => setOpen(!open)}>

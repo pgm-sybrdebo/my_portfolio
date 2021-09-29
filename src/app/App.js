@@ -1,6 +1,5 @@
-
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { PageTransition } from '@steveeeie/react-page-transition';
 import GlobalFonts from './fonts/font';
 import GlobalStyle from './theme/globalStyles';
 import Theme from './contexts/theme/Theme';
@@ -15,17 +14,26 @@ function App() {
     <Theme>
       <GlobalFonts />
       <GlobalStyle />
-      <Router basename={'/SybrenDeBoever'}>
-        <Switch>
-        <Route exact path={Routes.LANDING} component={ HomePage }/>
-        <Route from={Routes.HOME} to={Routes.LANDING}/>
-        <Route exact path={Routes.PROJECTS} component={ProjectsPage}/>
-        <Route exact path={Routes.PROJECTS_DETAILS} component={ProjectPage}/>
-        <Route exact path={Routes.ABOUT} component={ AboutPage } />
-        <Route exact path={Routes.CONTACT} component={ ContactPage }/>
-        </Switch>
-      </Router>
-        
+      <BrowserRouter basename={'/SybrenDeBoever'}>
+        <Route render={({ location }) => {
+          return (
+            <PageTransition 
+              preset="cubeToRight"
+              transitionKey={location.pathname}
+            >
+               <Switch location={location}>
+                  <Route exact path={Routes.LANDING} component={ HomePage }/>
+                  <Route from={Routes.HOME} to={Routes.LANDING}/>
+                  <Route exact path={Routes.PROJECTS} component={ProjectsPage}/>
+                  <Route exact path={Routes.PROJECTS_DETAILS} component={ProjectPage}/>
+                  <Route exact path={Routes.ABOUT} component={ AboutPage } />
+                  <Route exact path={Routes.CONTACT} component={ ContactPage }/>
+                </Switch>
+            </PageTransition>
+          );
+        }}
+       />
+      </BrowserRouter>
     </Theme>
   );
 }

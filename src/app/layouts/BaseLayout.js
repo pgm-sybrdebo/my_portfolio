@@ -5,6 +5,14 @@ import { Footer, Header } from '../components/layout';
 const Container = styled.div`
   max-width: ${props => props.theme.width.elarge};
   margin: 0 auto;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
 `;
 const MainLayout = styled.main`
   // max-width: ${props => props.theme.width.elarge};

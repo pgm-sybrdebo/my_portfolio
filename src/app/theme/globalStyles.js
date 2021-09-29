@@ -2,6 +2,11 @@
 import { createGlobalStyle } from 'styled-components';
  
 const GlobalStyle = createGlobalStyle`
+  html,
+  #root, body {
+    height: 100%;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -16,17 +21,19 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: ${props => props.theme.fontSizes.emedium};
+    line-height: 1.2;
 
     @media (min-width: ${props => props.theme.width.medium}) {
-      font-size: ${props => props.theme.fontSizes.large}
+      font-size: ${props => props.theme.fontSizes.large};
     }
   }
 
   h2 {
     font-size: ${props => props.theme.fontSizes.medium};
+    line-height: 1.2;
 
     @media (min-width: ${props => props.theme.width.medium}) {
-      font-size: ${props => props.theme.fontSizes.emedium}
+      font-size: ${props => props.theme.fontSizes.emedium};
     }
   }
 
@@ -36,10 +43,12 @@ const GlobalStyle = createGlobalStyle`
 
   span {
     font-size: ${props => props.theme.fontSizes.small};
+    line-height: 1.5;
   }
 
   p {
     font-size: ${props => props.theme.fontSizes.normal};
+    line-height: 1.5;
   }
 
   a {

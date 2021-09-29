@@ -32,6 +32,7 @@ const Technology = styled.li`
     span {
       transform: rotate3d(1, 1, 0, -180deg);
       position: absolute;
+      padding: 0.3rem;
       top: 0;
       left: 0;
       width: 100%;
@@ -57,7 +58,7 @@ const TechnologyCard = ({technology}) => {
   return (
     <Technology>
       <div>
-        <img src={technology.image} className={technology.name === 'Handlebars' || technology.name === 'Express' ? 'whiteImg': ''}/>
+        <img src={technology.image} alt={technology.name} className={technology.name === 'Handlebars' || technology.name === 'Express' ? 'whiteImg': ''}/>
         <span>{technology.name}</span>
       </div>
     </Technology>

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import useView from '../../hooks/useView';
 
-const FooterStyle = styled.footer`
-  margin-top: 3rem;
-  padding: 1.5rem;
+const FooterStyle = styled(motion.footer)`
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
 `;
 
 const Creator = styled.p`
@@ -14,9 +16,13 @@ const Creator = styled.p`
 const Footer = () => {
   const today = new Date();
   const currentYear = today.getFullYear();
+  const { ref, inView }=  useInView({
+    triggerOnce: true
+  });
+  const animation = useView(inView);
 
   return (
-    <FooterStyle>
+    <FooterStyle ref={ref} animate={animation}>
       <Creator>© Sybren De Boever - {currentYear}</Creator> 
     </FooterStyle>
   )
