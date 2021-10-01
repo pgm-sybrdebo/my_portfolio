@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Technology = styled.li`
-  margin: 1rem;
+  margin: 1.5rem 1rem;
   width: 25%;
   height: 5rem;
 

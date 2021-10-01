@@ -4,48 +4,55 @@
     "years": "2020-2021",
     "position": "Full-stack developer",
     "organisation": "OSOC Belgium",
-    "location": "home"
+    "location": null,
+    "studentJob": true
   },
   {
     "id": 2,
     "years": "2018-2021",
     "position": "Bank clerq",
     "organisation": "management office Vandenheede",
-    "location": "Tiegem"
+    "location": "Tiegem",
+    "studentJob": true
   },
   {
     "id": 3,
     "years": "2019-2020",
-    "position": "Internship functional assistant",
+    "position": "functional analyst",
     "organisation": "Itineris",
-    "location": "Sint-Denijs-Westrem"
+    "location": "Sint-Denijs-Westrem",
+    "studentJob": false
   },
   {
     "id": 4,
     "years": "2017-2018",
-    "position": "Internship Bank clerq",
+    "position": "Bank clerq",
     "organisation": "management office Vandenheede",
-    "location": "Tiegem"
+    "location": "Tiegem",
+    "studentJob": false
   },
   {
     "id": 5,
     "years": "2016-2017",
     "position": "Administrative assistant",
     "organisation": "CNH financial services",
-    "location": "Zedelgem"
+    "location": "Zedelgem",
+    "studentJob": true
   },
   {
     "id": 6,
     "years": "2013-2016",
     "position": "Administrative assistant",
     "organisation": "Procotex NV",
-    "location": "Dottignies"
+    "location": "Dottignies",
+    "studentJob": true
   },
   {
     "id": 7,
     "years": "2012-2014",
     "position": "Shop-assistant",
     "organisation": "Blokker",
-    "location": "Kuurne and Roeselare"
+    "location": "Kuurne and Roeselare",
+    "studentJob": true
   }
 ]

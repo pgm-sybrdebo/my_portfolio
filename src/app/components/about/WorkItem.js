@@ -42,11 +42,11 @@ const WorkItem = ({work}) => {
     <ListItem>
       <Years>{work.years}</Years>
       <div>
-        <Small>Student job: </Small>
+        <Small>{work.studentJob ? "Student job: " : "Internship: " }</Small>
         <Bold>{work.position}</Bold>
         <Small> at </Small>
         <span>{work.organisation}</span>
-        <Small> in {work.location}</Small>
+        <Small> {work.location !== null ? " in " : ""} {work.location}</Small>
       </div>
       
     </ListItem>

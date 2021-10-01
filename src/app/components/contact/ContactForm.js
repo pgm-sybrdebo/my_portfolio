@@ -72,7 +72,7 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(formConfig.serviceId, formConfig.templateId, form.current)
+    emailjs.sendForm(formConfig.serviceId, formConfig.templateId, form.current, formConfig.userId)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
