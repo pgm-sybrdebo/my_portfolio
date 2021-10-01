@@ -62,13 +62,14 @@ const NavButton = styled.button`
 const NavigationList = styled.ul`
   list-style: none;
   position: absolute;
-  left: 1.5rem;
+  left: 0rem;
   top:  ${({ open }) => open ? '0' : '-100%'};
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
   overscroll-behavior: contain;
   padding-top: 6rem;
+  padding-left: 1.5rem;
   background-color: ${props => props.theme.colors.blackBg};
   z-index: 10;
   transition: ${props => props.theme.transition.normal};

@@ -32,8 +32,8 @@
         "image": "/media/svg/technologies/html.svg"
       },
       {
-        "name": "CSS",
-        "image": "/media/svg/technologies/css.svg"
+        "name":"SASS",
+        "image": "/media/svg/technologies/sass.svg"
       },
       {
         "name": "Js",
@@ -46,10 +46,6 @@
       {
         "name": "Nunjucks",
         "image": "/media/svg/technologies/nunjucks.svg"
-      },
-      {
-        "name": "Sass",
-        "image": "/media/svg/technologies/sass.svg"
       }
     ],
     "bottomImage": "/media/images/projects/hikeventureBottom.png"
@@ -71,7 +67,7 @@
       },
       {
         "name": "github code",
-        "link": "https://github.com/pgmgent-pgm-4/movie-application-pgm-sybrdebo"
+        "link": "https://github.com/pgm-sybrdebo/MovieWorld"
       }
     ],
     "part1Image": "/media/images/projects/movieworldPart1.png",
@@ -83,8 +79,8 @@
         "image": "/media/svg/technologies/react.svg"
       },
       {
-        "name": "CSS",
-        "image": "/media/svg/technologies/css.svg"
+        "name": "SASS",
+        "image": "/media/svg/technologies/sass.svg"
       },
       {
         "name": "Js",
@@ -130,7 +126,7 @@
       },
       {
         "name":"github code",
-        "link":"https://github.com/pgmgent-pgm-4/webshop-runtime-terror"
+        "link":"https://github.com/pgm-sybrdebo/TimelessTaste"
       }
     ],
     "part1Image": "/media/images/projects/timelessPart1.png",
@@ -246,5 +242,87 @@
       }
     ],
     "bottomImage": "/media/images/projects/roadbaseBottom.png"
+  },
+  {
+    "id": 5,
+    "name": "Sybeja",
+    "highlighted": false,
+    "image": "/media/images/projects/sybejaMockup.png",
+    "intro": "As a school assignment, a responsive website for an fictional digital agency (Sybeja) was designed. The website contains an overview of the services you provide, the successful cases, team members en contact information. This project was in collaboration with Jamie-Lee Hart",
+    "deliverables": [
+      {
+        "name": "github code",
+        "link": "https://github.com/pgm-sybrdebo/sybeja"
+      },
+      {
+        "name": "Full website",
+        "link": "https://the8gency.github.io/digital-agency-digital-agency-team-1/"
+      }
+    ],
+    "part1Image": "/media/images/projects/sybejaPart1.png",
+    "part1": "This was a sprint assignment of 1 week. First and foremost, a brainstorming session was held concerning what type of digital agency we are and which functionalities will be offered. The website was then presented visually using low-fidelity wireframes. Finally, the low fidelity wireframes were converted into a working website.",
+    "part2Image": "/media/images/projects/sybejaPart2.png",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": "/media/svg/technologies/html.svg"
+      },
+      {
+        "name": "Sass",
+        "image": "/media/svg/technologies/sass.svg"
+      },
+      {
+        "name": "Js",
+        "image": "/media/svg/technologies/js.svg"
+      },
+      {
+        "name": "Node",
+        "image": "/media/svg/technologies/node.svg"
+      },
+      {
+        "name": "Nunjucks",
+        "image": "/media/svg/technologies/nunjucks.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "image": "/media/svg/technologies/bootstrap.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/sybejaBottom.png"
+  },
+  {
+    "id": 6,
+    "name": "Gentse Feesten",
+    "highlighted": false,
+    "image": "/media/images/projects/gentsefeestenMockup.png",
+    "intro": "The website for the \"Gentse Feesten\" was created as one of the first school assignments. This website contains a home page, day overview and event detail pages.",
+    "deliverables": [
+      {
+        "name": "github code",
+        "link": "https://github.com/pgm-sybrdebo/atwork1_Project2_Gentse_Feesten"
+      },
+      {
+        "name": "Full website",
+        "link": "https://pgmgent-2021-atwork1.github.io/atwork-1_project_2-pgm-sybrdebo/"
+      }
+    ],
+    "part1Image": "/media/images/projects/gentsefeestenPart1.png",
+    "part1": "Due to Covid-19, the \"Gentse Feesten\" 2020 edition was cancelled, but Thinline had already made the visual design for it. Our assignment was to convert this visual design into a real website with some personal touches.",
+    "part2Image": "/media/images/projects/gentsefeestenPart2.png",
+    "technologies": [
+      {
+        "name": "HTML",
+        "image": "/media/svg/technologies/html.svg"
+      },
+      {
+        "name": "CSS",
+        "image": "/media/svg/technologies/css.svg"
+      },
+      {
+        "name": "Js",
+        "image": "/media/svg/technologies/js.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/gentsefeestenBottom.png"
   }
 ]

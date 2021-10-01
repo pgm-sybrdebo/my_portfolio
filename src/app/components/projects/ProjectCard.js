@@ -44,7 +44,7 @@ const Card = styled(motion.div)`
   .textContainer {
     width: 80%;
     display: block;
-    background-image: linear-gradient(185deg,rgba(0,0,0,0),rgba(0,0,0,.6));
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0.6) 100%);
     position: absolute;
     left: 0rem;
     bottom: 0;
