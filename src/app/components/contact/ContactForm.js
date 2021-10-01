@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import { useRef } from 'react';
 import { PrimButton } from '../buttons';
 import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
 import { formConfig } from '../../config';
+
+init(formConfig.userId);
 
 const Form = styled.form`
   margin-top: 1.5rem;
