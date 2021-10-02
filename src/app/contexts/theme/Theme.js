@@ -4,8 +4,9 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     black: "#000",
-    white: "#fff",
+    white: "#FFF",
     blackBg: "#050812",
+    grey: '#737373',
     primaryAccentColor: "#00B0F0",
     secondaryAccentColor: "#F4BE18",
   },
