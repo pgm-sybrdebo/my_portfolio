@@ -16,6 +16,7 @@ const ImageContainer = styled.div`
     max-width: ${props => props.theme.width.elarge};
     margin: 0 auto;
     position: static;
+    width: 100%;
   }
 
   img {
