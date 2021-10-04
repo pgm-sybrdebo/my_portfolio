@@ -3,8 +3,8 @@ import { Footer, Header } from '../components/layout';
 
 
 const Container = styled.div`
-  max-width: ${props => props.theme.width.elarge};
-  margin: 0 auto;
+  // max-width: ${props => props.theme.width.elarge};
+  // margin: 0 auto;
   z-index: 1;
   height: 100%;
   display: flex;
@@ -15,8 +15,8 @@ const Container = styled.div`
   width: 100%;
 `;
 const MainLayout = styled.main`
-  // max-width: ${props => props.theme.width.elarge};
-  // margin: 0 auto;
+  max-width: ${props => props.theme.width.elarge};
+  margin: 0 auto;
   padding: 0 1.5rem;
 
   @media (min-width: ${props => props.theme.width.medium}) {

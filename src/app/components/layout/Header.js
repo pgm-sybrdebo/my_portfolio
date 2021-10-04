@@ -3,6 +3,13 @@ import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 import * as Routes from '../../routes';
 
+const HeaderContainer = styled.div`
+  max-width: ${props => props.theme.width.elarge};
+  width: 100%;
+  margin: 0 auto;
+`;
+
+
 const HeaderStyle = styled.div`
   display: flex;
   justify-content: space-between;
@@ -152,31 +159,33 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   
   return (
-    <HeaderStyle>
-      <NavLink to={Routes.LANDING}>
-        <Logo xmlns="http://www.w3.org/2000/svg" width="70" height="49"><g data-name="Group 1" fill="#fff" fontFamily="Montserrat-Bold, Montserrat" fontWeight="700"><text fontSize="40"><tspan x="0" y="39">S</tspan></text><text transform="matrix(-1 0 0 1 47 39)" fontSize="24"><tspan x="0" y="0">D</tspan></text><text transform="translate(39 16)" fontSize="24"><tspan x="0" y="23">B</tspan></text></g></Logo>
-      </NavLink>
+    <HeaderContainer>
+      <HeaderStyle>
+        <NavLink to={Routes.LANDING}>
+          <Logo xmlns="http://www.w3.org/2000/svg" width="70" height="49"><g data-name="Group 1" fill="#fff" fontFamily="Montserrat-Bold, Montserrat" fontWeight="700"><text fontSize="40"><tspan x="0" y="39">S</tspan></text><text transform="matrix(-1 0 0 1 47 39)" fontSize="24"><tspan x="0" y="0">D</tspan></text><text transform="translate(39 16)" fontSize="24"><tspan x="0" y="23">B</tspan></text></g></Logo>
+        </NavLink>
 
-      <NavButton open={open} onClick={() => setOpen(!open)}>
-        <span />
-        <span />
-        <span />
-      </NavButton>
+        <NavButton open={open} onClick={() => setOpen(!open)}>
+          <span />
+          <span />
+          <span />
+        </NavButton>
 
-      <nav  open={open}>
-        <NavigationList open={open}>
-          <li>
-            <NavLink to={Routes.PROJECTS} activeClassName='is-active'>My Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to={Routes.ABOUT} activeClassName='is-active'>About me</NavLink>
-          </li>
-          <li>
-            <NavLink to={Routes.CONTACT} activeClassName='is-active'>Contact me</NavLink>
-          </li>
-        </NavigationList>  
-      </nav>       
-    </HeaderStyle>
+        <nav  open={open}>
+          <NavigationList open={open}>
+            <li>
+              <NavLink to={Routes.PROJECTS} activeClassName='is-active'>My Projects</NavLink>
+            </li>
+            <li>
+              <NavLink to={Routes.ABOUT} activeClassName='is-active'>About me</NavLink>
+            </li>
+            <li>
+              <NavLink to={Routes.CONTACT} activeClassName='is-active'>Contact me</NavLink>
+            </li>
+          </NavigationList>  
+        </nav>       
+      </HeaderStyle>
+    </HeaderContainer>
   )
 }
 

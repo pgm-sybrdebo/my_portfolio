@@ -5,6 +5,8 @@ import useView from '../../hooks/useView';
 
 const FooterStyle = styled(motion.footer)`
   padding: 3rem 1.5rem 1.5rem 1.5rem;
+  max-width: ${props => props.theme.width.elarge};
+  margin: 0 auto;
 `;
 
 const Creator = styled.p`
