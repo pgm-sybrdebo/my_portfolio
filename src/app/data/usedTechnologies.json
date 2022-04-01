@@ -11,7 +11,7 @@
   },
   {
     "id": 3,
-    "name": "Js",
+    "name": "JS",
     "image": "/media/svg/technologies/js.svg"
   },
   {
@@ -21,105 +21,147 @@
   },
   {
     "id": 5,
+    "name": "PHP",
+    "image": "/media/svg/technologies/php.svg"
+  },
+  {
+    "id": 6,
+    "name": "Tailwind",
+    "image": "/media/svg/technologies/tailwind.svg"
+  },
+  {
+    "id": 7,
     "name": "Node",
     "image": "/media/svg/technologies/node.svg"
   },
   {
-    "id": 6,
+    "id": 8,
     "name": "Nunjucks",
     "image": "/media/svg/technologies/nunjucks.svg"
   },
   {
-    "id": 7,
+    "id": 9,
     "name": "Sass",
     "image": "/media/svg/technologies/sass.svg"
   },
   {
-    "id": 8,
+    "id": 10,
     "name": "React",
     "image": "/media/svg/technologies/react.svg"
   },
   {
-    "id": 9,
+    "id": 11,
+    "name": "Next.js",
+    "image": "/media/svg/technologies/nextjs.svg"
+  },
+  {
+    "id": 12,
+    "name": "Three.js",
+    "image": "/media/svg/technologies/threejs.svg"
+  },
+  {
+    "id": 13,
+    "name": "Symfony",
+    "image": "/media/svg/technologies/symfony.svg"
+  },
+  {
+    "id": 14,
     "name": "Ember",
     "image": "/media/svg/technologies/ember.svg"
   },
   {
-    "id": 10,
+    "id": 15,
     "name": "Leaflet",
     "image": "/media/svg/technologies/leaflet.svg"
   },
   {
-    "id": 11,
-    "name": "Handlebars",
-    "image": "/media/svg/technologies/handlebars.svg"
-  },
-  {
-    "id": 12,
+    "id": 16,
     "name": "Express",
     "image": "/media/svg/technologies/express.svg"
   },
   {
-    "id": 13,
+    "id": 17,
+    "name": "Nestjs",
+    "image": "/media/svg/technologies/nestjs.svg"
+  },
+  {
+    "id": 18,
     "name": "Passport",
     "image": "/media/svg/technologies/passportjs.svg"
   },
   {
-    "id": 14,
+    "id": 19,
+    "name": "Graphql",
+    "image": "/media/svg/technologies/graphql.svg"
+  },
+  {
+    "id": 20,
     "name": "Firebase",
     "image": "/media/svg/technologies/firebase.svg"
   },
   {
-    "id": 15,
+    "id": 21,
     "name": "Firestore",
     "image": "/media/svg/technologies/firestore.svg"
   },
   {
-    "id": 16,
+    "id": 22,
     "name": "Sequelize",
     "image": "/media/svg/technologies/sequelize.svg"
   },
   {
-    "id": 17,
+    "id": 23,
     "name": "Sqlite",
     "image": "/media/svg/technologies/sqlite.svg"
   },
   {
-    "id": 18,
+    "id": 24,
     "name": "MySql",
     "image": "/media/svg/technologies/mysql.svg"
   },
   {
-    "id": 19,
+    "id": 25,
+    "name": "Sulu",
+    "image": "/media/svg/technologies/sulu.svg"
+  },
+  {
+    "id": 26,
+    "name": "Twig",
+    "image": "/media/svg/technologies/twig.svg"
+  },
+  {
+    "id": 27,
     "name": "Swagger",
     "image": "/media/svg/technologies/swagger.svg"
   },
   {
-    "id": 20,
+    "id": 28,
     "name": "Docker",
     "image": "/media/svg/technologies/docker.svg"
   },
   {
-    "id": 21,
+    "id": 29,
     "name": "Git",
     "image": "/media/svg/technologies/git.svg"
   },
   {
-    "id": 22,
+    "id": 30,
     "name": "Adobe Xd",
     "image": "/media/svg/technologies/adobexd.svg"
   },
   {
-    "id": 23,
+    "id": 31,
     "name": "Photoshop",
     "image": "/media/svg/technologies/adobephotoshop.svg"
   },
   {
-    "id": 24,
+    "id": 32,
     "name": "Figma",
     "image": "/media/svg/technologies/figma.svg"
+  },
+  {
+    "id": 33,
+    "name": "Blender",
+    "image": "/media/svg/technologies/blender.svg"
   }
-
- 
-
 ]

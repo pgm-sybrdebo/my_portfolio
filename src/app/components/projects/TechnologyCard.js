@@ -1,17 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Technology = styled.li`
+  display: flex;
   margin: 1.5rem 1rem;
   width: 25%;
   height: 5rem;
-
 
   div {
     position: relative;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    transition: ${props => props.theme.transition.medium};
+    transition: ${(props) => props.theme.transition.medium};
     transform-style: preserve-3d;
 
     img {
@@ -26,7 +26,8 @@ const Technology = styled.li`
     }
 
     .whiteImg {
-      filter: invert(100%) sepia(2%) saturate(3%) hue-rotate(19deg) brightness(103%) contrast(100%);
+      filter: invert(100%) sepia(2%) saturate(3%) hue-rotate(19deg)
+        brightness(103%) contrast(100%);
     }
 
     span {
@@ -38,11 +39,11 @@ const Technology = styled.li`
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      border: 3px solid ${props => props.theme.colors.primaryAccentColor};
+      border: 3px solid ${(props) => props.theme.colors.primaryAccentColor};
       border-radius: 3px;
       display: flex;
-      color: ${props => props.theme.colors.primaryAccentColor};
-      font-size: ${props => props.theme.fontSizes.esmall};
+      color: ${(props) => props.theme.colors.primaryAccentColor};
+      font-size: ${(props) => props.theme.fontSizes.esmall};
       align-items: center;
       justify-content: center;
       word-break: break-all;
@@ -54,15 +55,23 @@ const Technology = styled.li`
   }
 `;
 
-const TechnologyCard = ({technology}) => {
+const TechnologyCard = ({ technology }) => {
   return (
     <Technology>
       <div>
-        <img src={technology.image} alt={technology.name} className={technology.name === 'Handlebars' || technology.name === 'Express' ? 'whiteImg': ''}/>
+        <img
+          src={technology.image}
+          alt={technology.name}
+          className={
+            technology.name === "Handlebars" || technology.name === "Express"
+              ? "whiteImg"
+              : ""
+          }
+        />
         <span>{technology.name}</span>
       </div>
     </Technology>
-  )
-}
+  );
+};
 
-export default TechnologyCard
+export default TechnologyCard;

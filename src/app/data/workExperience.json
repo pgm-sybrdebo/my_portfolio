@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "years": "2021-2022",
+    "position": "Full-stack developer",
+    "organisation": "PHPro",
+    "location": "Kontich",
+    "studentJob": false
+  },
+  {
+    "id": 2,
     "years": "2020-2021",
     "position": "Full-stack developer",
     "organisation": "OSOC Belgium",
@@ -8,7 +16,7 @@
     "studentJob": true
   },
   {
-    "id": 2,
+    "id": 3,
     "years": "2018-2021",
     "position": "Bank clerq",
     "organisation": "management office Vandenheede",
@@ -16,7 +24,7 @@
     "studentJob": true
   },
   {
-    "id": 3,
+    "id": 4,
     "years": "2019-2020",
     "position": "functional analyst",
     "organisation": "Itineris",
@@ -24,7 +32,7 @@
     "studentJob": false
   },
   {
-    "id": 4,
+    "id": 5,
     "years": "2017-2018",
     "position": "Bank clerq",
     "organisation": "management office Vandenheede",
@@ -32,7 +40,7 @@
     "studentJob": false
   },
   {
-    "id": 5,
+    "id": 6,
     "years": "2016-2017",
     "position": "Administrative assistant",
     "organisation": "CNH financial services",
@@ -40,7 +48,7 @@
     "studentJob": true
   },
   {
-    "id": 6,
+    "id": 7,
     "years": "2013-2016",
     "position": "Administrative assistant",
     "organisation": "Procotex NV",
@@ -48,7 +56,7 @@
     "studentJob": true
   },
   {
-    "id": 7,
+    "id": 8,
     "years": "2012-2014",
     "position": "Shop-assistant",
     "organisation": "Blokker",
