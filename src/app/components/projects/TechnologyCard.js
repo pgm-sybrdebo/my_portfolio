@@ -63,7 +63,9 @@ const TechnologyCard = ({ technology }) => {
           src={technology.image}
           alt={technology.name}
           className={
-            technology.name === "Handlebars" || technology.name === "Express"
+            technology.name === "Handlebars" ||
+            technology.name === "Express" ||
+            technology.name === "Apollo"
               ? "whiteImg"
               : ""
           }

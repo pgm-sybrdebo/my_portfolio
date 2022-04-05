@@ -4,6 +4,7 @@
     "name": "Hikeventure",
     "highlighted": false,
     "image": "/media/images/projects/hikeventureMockup.png",
+    "headerVideo": false,
     "intro": "As a school assignment, a hiking app \"Hikeventure\" was designed. In addition, a landing page was also created for the promotion of the app (desktop only). Hikeventure is a walking app with a wide range of walking routes all over the world. They provide walking routes for both novice walkers to passionate ones.",
     "deliverables": [
       {
@@ -19,7 +20,7 @@
         "link": "https://xd.adobe.com/view/45362993-ec5e-43ed-a9cb-787d63e5057f-1065/"
       },
       {
-        "name": "github code landing page",
+        "name": "Github code landing page",
         "link": "https://github.com/pgm-sybrdebo/Landingpage_Hiking_App"
       }
     ],
@@ -48,13 +49,15 @@
         "image": "/media/svg/technologies/nunjucks.svg"
       }
     ],
-    "bottomImage": "/media/images/projects/hikeventureBottom.png"
+    "bottomImage": "/media/images/projects/hikeventureBottom.png",
+    "bottomVideo": false
   },
   {
     "id": 2,
     "name": "MovieWorld",
     "highlighted": false,
     "image": "/media/images/projects/movieworldMockup.png",
+    "headerVideo": false,
     "intro": "As a school assignment, a movie application was created where users can review movies and series. In addition, they can also see the details of the movies and series, including the user rating. MovieWorld is based on the cinema feeling you get when watching a movie. The website is hosted on firebase.",
     "deliverables": [
       {
@@ -66,7 +69,7 @@
         "link": "https://movieworld-4e1a0.web.app/"
       },
       {
-        "name": "github code",
+        "name": "Github code",
         "link": "https://github.com/pgm-sybrdebo/MovieWorld"
       }
     ],
@@ -99,13 +102,15 @@
         "image": "/media/svg/technologies/firestore.svg"
       }
     ],
-    "bottomImage": "/media/images/projects/movieworldBottom.png"
+    "bottomImage": "/media/images/projects/movieworldBottom.png",
+    "bottomVideo": false
   },
   {
     "id": 3,
     "name": "Timeless Taste",
-    "highlighted": true,
+    "highlighted": false,
     "image": "/media/images/projects/timelesstasteMockup.png",
+    "headerVideo": false,
     "intro": "As a school assignment, the webshop \"Timeless Taste\" was created. The target group and products were free to choose from. We decided to offer watches and accompanying accessories. The target group are entrepreneurs, lawyers, business people, ... . A more luxurious feel was therefore chosen. This project was in collaboration with Jamie-Lee Hart.",
     "deliverables": [
       {
@@ -125,7 +130,7 @@
         "link": "https://xd.adobe.com/view/cf2f22b0-1e22-4ce4-8e83-6365e0414da0-9a7c/"
       },
       {
-        "name":"github code",
+        "name":"Github code",
         "link":"https://github.com/pgm-sybrdebo/TimelessTaste"
       }
     ],
@@ -170,13 +175,15 @@
         "image": "/media/svg/technologies/express.svg"
       }
     ],
-    "bottomImage": "/media/images/projects/timelessBottom.png"
+    "bottomImage": "/media/images/projects/timelessBottom.png",
+    "bottomVideo": false
   },
   {
     "id": 4,
     "name": "Roadbase",
     "highlighted": true,
     "image": "/media/images/projects/roadbaseMockup.png",
+    "headerVideo": false,
     "intro": "RoadBase is a project created in a collaboration between Open Summer of Code and Agentschap Binnenlands Bestuur, Agentschap Wegen en Verkeer and Departement Mobiliteit en Openbare Werken Vlaanderen. The aim of this project is to create a tool to gather and integrate up to date information from different sources regarding road signs and road marks so that citizens, road managers and policy makers can effectively contribute to make their communities safer. Through linked open data, this tool is expected to provide convenience to road users and encourage them to actively engage in providing information to enhance road safety.",
     "deliverables": [
       {
@@ -241,17 +248,19 @@
         "image": "/media/svg/technologies/docker.svg"
       }
     ],
-    "bottomImage": "/media/images/projects/roadbaseBottom.png"
+    "bottomImage": "/media/images/projects/roadbaseBottom.png",
+    "bottomVideo": false
   },
   {
     "id": 5,
     "name": "Sybeja",
     "highlighted": false,
     "image": "/media/images/projects/sybejaMockup.png",
+    "headerVideo": false,
     "intro": "As a school assignment, a responsive website for an fictional digital agency (Sybeja) was designed. The website contains an overview of the services you provide, the successful cases, team members en contact information. This project was in collaboration with Jamie-Lee Hart",
     "deliverables": [
       {
-        "name": "github code",
+        "name": "Github code",
         "link": "https://github.com/pgm-sybrdebo/sybeja"
       },
       {
@@ -288,17 +297,19 @@
         "image": "/media/svg/technologies/bootstrap.svg"
       }
     ],
-    "bottomImage": "/media/images/projects/sybejaBottom.png"
+    "bottomImage": "/media/images/projects/sybejaBottom.png",
+    "bottomVideo": false
   },
   {
     "id": 6,
     "name": "Gentse Feesten",
     "highlighted": false,
     "image": "/media/images/projects/gentsefeestenMockup.png",
+    "headerVideo": false,
     "intro": "The website for the \"Gentse Feesten\" was created as one of the first school assignments. This website contains a home page, day overview and event detail pages.",
     "deliverables": [
       {
-        "name": "github code",
+        "name": "Github code",
         "link": "https://github.com/pgm-sybrdebo/atwork1_Project2_Gentse_Feesten"
       },
       {
@@ -323,6 +334,186 @@
         "image": "/media/svg/technologies/js.svg"
       }
     ],
-    "bottomImage": "/media/images/projects/gentsefeestenBottom.png"
+    "bottomImage": "/media/images/projects/gentsefeestenBottom.png",
+    "bottomVideo": false
+  },
+  {
+    "id": 7,
+    "name": "Dormdash",
+    "highlighted": false,
+    "image": "/media/images/projects/dormdashMockup.png",
+    "headerVideo": false,
+    "intro": "For the course Programming-5, Jamie-Lee Hart and I were asked to make a management application in collaboration with students from Canada. We have chosen to create a delivery application for students.",
+    "deliverables": [
+      {
+        "name": "Wireframes Dormdash",
+        "link": "https://xd.adobe.com/view/37b146f1-ad5b-4707-afa9-f7f88ee5a3a8-62e2/"
+      },
+      {
+        "name": "Visual design",
+        "link": "https://xd.adobe.com/view/eb4fe5e4-f828-45bb-b876-4e5d11ab5186-be1c/"
+      },
+      {
+        "name": "Clickable prototype",
+        "link": "https://xd.adobe.com/view/b377635f-ddee-4114-ac37-7dc6fe843557-e624/"
+      },
+      {
+        "name": "Github code server",
+        "link": "https://github.com/pgm-sybrdebo/dormdash_server"
+      },
+      {
+        "name": "Github code client",
+        "link": "https://github.com/pgm-sybrdebo/coil-project-2021-sleepy-chickens"
+      },
+      {
+        "name": "Full website",
+        "link": "https://dormdash.onrender.com/#/"
+      }
+    ],
+    "part1Image": "/media/images/projects/dormdashPart1.png",
+    "part1": "Dormdash is a delivery application aimed at students. This app allows the students to order inexpensive and healthy meals from various restaurants nearby. In addition, Dormdash ensures that the dishes are delivered in an environmentally conscious way. The application also includes a dashboard for both the restaurants and the deliverers. This allows the restaurants to see statistics about the turnover. In addition, the restaurants can manage their dishes in the menu.",
+    "part2Image": "/media/images/projects/dormdashPart2.png",
+    "technologies": [
+      {
+        "name": "PostgreSQL",
+        "image": "/media/svg/technologies/postgresql.svg"
+      },
+      {
+        "name": "NestJS",
+        "image": "/media/svg/technologies/nestjs.svg"
+      },
+      {
+        "name": "Graphql",
+        "image": "/media/svg/technologies/graphql.svg"
+      },
+      {
+        "name": "Typescript",
+        "image": "/media/svg/technologies/typescript.svg"
+      },
+      {
+        "name": "React",
+        "image": "/media/svg/technologies/react.svg"
+      },
+      {
+        "name": "Apollo",
+        "image": "/media/svg/technologies/apollo.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/dormdashBottom.png",
+    "bottomVideo": false
+  },
+  {
+    "id": 8,
+    "name": "Diorama",
+    "highlighted": true,
+    "image": "/media/images/projects/dioramaMockup.mp4",
+    "headerVideo": true,
+    "intro": "For the interactive media course I designed and programmed a three-dimensional diorama. The theme of the scene was Halloween.",
+    "deliverables": [
+      {
+        "name": "Github code",
+        "link": "https://github.com/pgm-sybrdebo/diorama-pgm-sybrdebo"
+      },
+      {
+        "name": "Diorama page",
+        "link": "https://pgmgent-2122-im.github.io/diorama-pgm-sybrdebo/"
+      }
+    ],
+    "part1Image": "/media/images/projects/dioramaPart1.png",
+    "part1": "First of all, the scene was designed and the necessary 3D assets modeled in Blender. Then the diorama was programmed with React, Three.js and React Three Fiber.",
+    "part2Image": "/media/images/projects/dioramaPart2.png",
+    "technologies": [
+      {
+        "name": "Blender",
+        "image": "/media/svg/technologies/blender.svg"
+      },
+      {
+        "name": "React",
+        "image": "/media/svg/technologies/react.svg"
+      },
+      {
+        "name": "ThreeJs",
+        "image": "/media/svg/technologies/Threejs.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/dioramaBottom.mp4",
+    "bottomVideo": true
+  },
+  {
+    "id": 9,
+    "name": "Stock and reservation management",
+    "highlighted": false,
+    "image": "/media/images/projects/stockMockup.png",
+    "headerVideo": false,
+    "intro": "Aiden Soufi and I were allowed to create a web application for the artevelde university of applied sciences to manage and reserve their IT equipment. This gives Artevelde more insights into the amount of IT material they have and where it is located at any time.",
+    "deliverables": [
+      {
+        "name": "Wireframes desktop",
+        "link": "https://xd.adobe.com/view/e3458138-b8e2-477c-829f-6f54be627f5c-b616/"
+      },
+      {
+        "name": "Wireframes mobile",
+        "link": "https://xd.adobe.com/view/c3bc168a-e67a-458c-ae04-b7d82345e1cf-96ef/"
+      },
+      {
+        "name": "Visual design desktop",
+        "link": "https://xd.adobe.com/view/ccc3e009-fd07-4e5b-acdb-2c5477cb0d2c-9990/"
+      },
+      {
+        "name": "Style tile",
+        "link": "https://xd.adobe.com/view/8cd1a0ef-286e-47a3-91de-8c306c37e36f-d982/"
+      },
+      {
+        "name": "Github code",
+        "link": "https://github.com/pgm-sybrdebo/inventory-reservation-management"
+      },
+      {
+        "name": "Web application",
+        "link": "https://artevelde-inventory-client.herokuapp.com"
+      }
+    ],
+    "part1Image": "/media/images/projects/stockPart1.png",
+    "part1": "Aiden was responsible for the design and creation of the client part of the web application. I was responsible for the full back-end and the admin dashboard. The SCRUM method was applied in this project.",
+    "part2Image": "/media/images/projects/stockPart2.png",
+    "technologies": [
+      {
+        "name": "React",
+        "image": "/media/svg/technologies/react.svg"
+      },
+      {
+        "name": "Typescript",
+        "image": "/media/svg/technologies/typescript.svg"
+      },
+      {
+        "name": "Material UI",
+        "image": "/media/svg/technologies/materialUi.svg"
+      },
+      {
+        "name": "Apollo",
+        "image": "/media/svg/technologies/apollo.svg"
+      },
+      {
+        "name": "Nestjs",
+        "image": "/media/svg/technologies/nestjs.svg"
+      },
+      {
+        "name": "Graphql",
+        "image": "/media/svg/technologies/graphql.svg"
+      },
+      {
+        "name": "PostgreSql",
+        "image": "/media/svg/technologies/postgresql.svg"
+      },
+      {
+        "name": "TypeOrm",
+        "image": "/media/svg/technologies/typeorm.svg"
+      },
+      {
+        "name": "Node",
+        "image": "/media/svg/technologies/node.svg"
+      }
+    ],
+    "bottomImage": "/media/images/projects/stockBottom.png",
+    "bottomVideo": false
   }
 ]
